@@ -18,3 +18,14 @@
  GET /properties 200 in 632ms
  ✓ Compiled /units in 232ms (471 modules)
  GET /units 200 in 309ms
+ ✓ Compiled in 4.2s (524 modules)
+ GET / 200 in 289ms
+ ○ Compiling /properties ...
+ ✓ Compiled /properties in 828ms (512 modules)
+ ✓ Compiled /units in 224ms (513 modules)
+ ✓ Compiled /devices in 244ms (515 modules)
+ ✓ Compiled in 1017ms (540 modules)
+ GET / 200 in 264ms
+ ✓ Compiled /properties in 219ms (528 modules)
+ ✓ Compiled /units in 170ms (530 modules)
+ ✓ Compiled /devices in 150ms (531 modules)

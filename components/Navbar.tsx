@@ -1,6 +1,18 @@
+'use client';
+
 import { Globe, Bell, Users } from 'lucide-react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  const getLinkClass = (path: string) => {
+    return pathname === path
+      ? "text-inox-green"
+      : "hover:text-inox-green transition-colors";
+  };
+
   return (
     <header className="flex h-16 shrink-0 items-center justify-between bg-inox-dark px-6 text-white">
       <div className="flex items-center gap-8">
@@ -11,14 +23,14 @@ export default function Navbar() {
           </div>
         </div>
         <nav className="flex gap-6 text-sm font-semibold">
-          <a href="#" className="text-inox-green">Dashboard</a>
-          <a href="#" className="hover:text-inox-green transition-colors">Properties</a>
-          <a href="#" className="hover:text-inox-green transition-colors">Units</a>
-          <a href="#" className="hover:text-inox-green transition-colors">Devices</a>
-          <a href="#" className="hover:text-inox-green transition-colors">Users</a>
-          <a href="#" className="hover:text-inox-green transition-colors">Calendar</a>
-          <a href="#" className="hover:text-inox-green transition-colors">Access</a>
-          <a href="#" className="hover:text-inox-green transition-colors">Occu...</a>
+          <Link href="/" className={getLinkClass('/')}>Dashboard</Link>
+          <Link href="/properties" className={getLinkClass('/properties')}>Properties</Link>
+          <Link href="/units" className={getLinkClass('/units')}>Units</Link>
+          <Link href="/devices" className={getLinkClass('/devices')}>Devices</Link>
+          <Link href="/users" className={getLinkClass('/users')}>Users</Link>
+          <Link href="/calendar" className={getLinkClass('/calendar')}>Calendar</Link>
+          <Link href="/access" className={getLinkClass('/access')}>Access</Link>
+          <Link href="#" className="hover:text-inox-green transition-colors">Occu...</Link>
         </nav>
       </div>
       <div className="flex items-center gap-4">
