@@ -1,0 +1,20 @@
+
+> inox-dashboard-refactor@1.0.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+ ⚠ Port 3001 is in use, trying 3002 instead.
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3002
+
+ ✓ Starting...
+ ✓ Ready in 2.2s
+ ○ Compiling / ...
+ ✓ Compiled / in 5.9s (481 modules)
+ ✓ Compiled in 597ms (234 modules)
+ GET / 200 in 6578ms
+ GET / 200 in 78ms
+ ✓ Compiled /properties in 479ms (469 modules)
+ GET /properties 200 in 632ms
+ ✓ Compiled /units in 232ms (471 modules)
+ GET /units 200 in 309ms
